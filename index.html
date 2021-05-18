@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Search Animated</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Varele+Round&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <div id="search-box">
+        <img src="google.jpg" id="googleIcon" />
+        <input type="text" placeholder="Search Google or type a URL" />
+        <img src="search.png" class="mic-icon" />
+      </div>
+    </div>
+    <script>
+      var searchBox = document.getElementById("search-box");
+      var googleIcon = document.getElementById("googleIcon");
+
+      googleIcon.onclick = function () {
+        searchBox.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
